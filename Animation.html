@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Animations</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            height: 200px; width: 200px;
+            animation-name: clrchange;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes clrchange {
+            from {
+                background-color: deeppink;
+
+            }to {
+                background-color: blueviolet;
+            }
+            0% {
+                background-color: aqua;
+                transform: translate(0px,0px);
+            }
+            25% {
+                background-color: deeppink;
+                transform: translate(400px,0px);
+
+            }
+            50% {
+                background-color: aquamarine;
+                transform: translate(400px,400px);
+                border-radius: 100%;
+
+            }
+            75% {
+                background-color: purple;
+                transform: translate(0px,400px);
+                border: 10px dotted lightskyblue;
+
+            }
+            100% {
+                background-color: chartreuse;
+                transform: translate(0px,0px);
+
+            }
+        }
+    </style>
+</head>
+<p class="container"></p>
+</body>
+</html>
